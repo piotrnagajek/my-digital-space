@@ -22,16 +22,16 @@ const ProjectCard = ({ title, description, tags, image }: ProjectCardProps) => {
         {tags.map((tag) => (
           <span
             key={tag}
-            className="text-xs font-body tracking-wide uppercase text-muted-foreground border border-border px-3 py-1 rounded-full"
+            className="text-xs font-body tracking-wide uppercase text-primary border border-primary/30 px-3 py-1 rounded-full"
           >
             {tag}
           </span>
         ))}
       </div>
-      <h3 className="font-display text-2xl mb-2 text-foreground group-hover:text-primary transition-colors">
+      <h3 className="font-display text-xl sm:text-2xl mb-2 text-foreground group-hover:text-primary transition-colors">
         {title}
       </h3>
-      <p className="font-body text-muted-foreground leading-relaxed">{description}</p>
+      <p className="font-body text-sm sm:text-base text-muted-foreground leading-relaxed">{description}</p>
     </div>
   );
 };
