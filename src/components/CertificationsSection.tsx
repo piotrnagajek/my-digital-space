@@ -45,23 +45,29 @@ const CertificationsSection = () => {
 
         <div className="grid sm:grid-cols-3 gap-5 md:gap-6">
           {certifications.map((cert, index) => (
-            <motion.div
+            <motion.a
+              href={cert.certificateUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               key={cert.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.6, delay: index * 0.12, ease: [0.25, 0.1, 0.25, 1] }}
-              className="group p-6 md:p-8 rounded-xl bg-card border border-border/50 card-hover relative overflow-hidden"
+              className="group p-6 md:p-8 rounded-xl bg-card border border-border/50 card-hover relative overflow-hidden cursor-pointer"
             >
               <div className="absolute top-0 left-0 right-0 h-1 bg-primary/60 group-hover:bg-primary transition-colors duration-300" />
               <div className="flex items-center justify-between mb-5">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
                   <Award className="w-5 h-5 text-primary" />
                 </div>
-                <span className="flex items-center gap-1.5 text-xs font-body font-medium text-emerald-400">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400" />
-                  {cert.status}
-                </span>
+                <div className="flex items-center gap-3">
+                  <span className="flex items-center gap-1.5 text-xs font-body font-medium text-emerald-400">
+                    <span className="w-2 h-2 rounded-full bg-emerald-400" />
+                    {cert.status}
+                  </span>
+                  <ExternalLink className="w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
               </div>
               <h3 className="font-display text-base sm:text-lg font-semibold text-foreground mb-4 leading-snug group-hover:text-primary transition-colors duration-300">
                 {cert.title}
@@ -80,7 +86,7 @@ const CertificationsSection = () => {
                   </p>
                 )}
               </div>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
       </div>
