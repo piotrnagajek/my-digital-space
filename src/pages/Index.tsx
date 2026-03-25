@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import PassionsSection from "@/components/PassionsSection";
+import CertificationsSection from "@/components/CertificationsSection";
 import ContactSection from "@/components/ContactSection";
 
 const Index = () => {
@@ -30,6 +31,7 @@ const Index = () => {
       <AboutSection />
       <ProjectsSection />
       <PassionsSection />
+      <CertificationsSection />
       <ContactSection />
       <footer className="py-10 md:py-12 px-6 md:px-16 lg:px-24 border-t border-border/30">
         <p className="font-body text-sm text-muted-foreground">© 2026 Piotr Nagajek. All rights reserved.</p>
