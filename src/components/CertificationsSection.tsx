@@ -1,4 +1,4 @@
-import { Award } from "lucide-react";
+import { Award, ExternalLink } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 import { motion } from "framer-motion";
 
