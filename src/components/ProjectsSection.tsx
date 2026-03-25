@@ -7,19 +7,19 @@ import project3 from "@/assets/project-3.jpg";
 const projects = [
   {
     title: "Service Delivery Management",
-    description: "Full ownership of Incident, Major Incident & RCA processes at Fujitsu, managing cross-functional teams and senior-level customer relationships. By driving targeted improvements, reduced major incidents by approximately 75% — from 6–7 down to just 1–2 per year — while consistently achieving high CSAT scores through proactive communication and service excellence.",
+    description: "Full ownership of Incident, Major Incident & RCA processes at Fujitsu, managing cross-functional teams and senior stakeholder relationships. Drove targeted improvements that reduced major incidents by ~75% — from 6–7 down to just 1–2 per year — while consistently achieving high CSAT scores through proactive communication and service excellence.",
     tags: ["ITIL", "Leadership"],
     image: project1,
   },
   {
     title: "AI-Driven Process Optimization",
-    description: "Leveraged 2+ years of Generative AI experience to drive meaningful improvements in daily operations, including significantly optimizing trend analysis through custom AI agents — an initiative that earned formal recognition and reward.",
+    description: "Leveraged 2+ years of hands-on Generative AI experience to drive meaningful improvements across daily operations. Built custom AI agents that significantly optimised trend analysis, cutting manual effort and boosting accuracy — an initiative that earned formal recognition and a company reward for innovation.",
     tags: ["AI", "Innovation"],
     image: project2,
   },
   {
     title: "Financial & Risk Management",
-    description: "Developed and streamlined a process for managing and quoting non-contractual small projects, securing an additional revenue stream of up to ~£100K per fiscal year while overseeing POs, budgets, and service risk management.",
+    description: "Developed and streamlined an end-to-end process for managing and quoting non-contractual small projects, securing an additional revenue stream of up to ~£100K per fiscal year. Oversaw purchase orders, budgets, and service risk management to ensure financial governance and operational resilience.",
     tags: ["Finance", "Risk Management"],
     image: project3,
   },
