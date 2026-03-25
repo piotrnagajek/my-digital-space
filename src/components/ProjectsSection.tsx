@@ -7,19 +7,19 @@ import project3 from "@/assets/project-3.jpg";
 const projects = [
   {
     title: "Service Delivery Management",
-    description: "Full ownership of Incident, Major Incident & RCA processes at Fujitsu, managing cross-functional teams and senior-level customer relationships.",
+    description: "Full ownership of Incident, Major Incident & RCA processes at Fujitsu, managing cross-functional teams and senior-level customer relationships — consistently achieving high CSAT scores through proactive communication and service excellence.",
     tags: ["ITIL", "Leadership"],
     image: project1,
   },
   {
     title: "AI-Driven Process Optimization",
-    description: "Implemented AI-driven improvements and proactive service strategies, leveraging 2+ years of Generative AI experience to enhance daily operations.",
+    description: "Leveraged 2+ years of Generative AI experience to drive meaningful improvements in daily operations, including significantly optimizing trend analysis through custom AI agents — an initiative that earned formal recognition and reward.",
     tags: ["AI", "Innovation"],
     image: project2,
   },
   {
     title: "Financial & Risk Management",
-    description: "Oversaw financial aspects including POs and small projects, along with service risk management — delivering consistently high CSAT scores.",
+    description: "Developed and streamlined a process for managing and quoting non-contractual small projects, securing an additional revenue stream of up to ~£100K per fiscal year while overseeing POs, budgets, and service risk management.",
     tags: ["Finance", "Risk Management"],
     image: project3,
   },
