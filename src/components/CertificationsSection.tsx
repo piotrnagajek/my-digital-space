@@ -10,7 +10,7 @@ const certifications = [
     status: "Active",
   },
   {
-    title: "ITIL® Foundation Certificate in IT Service Management",
+    title: "ITIL® 4 Foundation Certificate in IT Service Management",
     id: "GR671380889PN",
     issued: "March 2022",
     renewal: "April 2028",
