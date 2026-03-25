@@ -7,7 +7,7 @@ import project3 from "@/assets/project-3.jpg";
 const projects = [
   {
     title: "Service Delivery Management",
-    description: "Full ownership of Incident, Major Incident & RCA processes at Fujitsu, managing cross-functional teams and senior-level customer relationships — consistently achieving high CSAT scores through proactive communication and service excellence.",
+    description: "Full ownership of Incident, Major Incident & RCA processes at Fujitsu, managing cross-functional teams and senior-level customer relationships. By driving targeted improvements, reduced major incidents by approximately 75% — from 6–7 down to just 1–2 per year — while consistently achieving high CSAT scores through proactive communication and service excellence.",
     tags: ["ITIL", "Leadership"],
     image: project1,
   },
