@@ -56,6 +56,7 @@ const HeroSection = () => {
         >
           ITIL-certified Service Delivery Manager driving excellence in IT service delivery, process optimization, and AI-driven improvements.
         </motion.p>
+        </div>
       </div>
 
       <motion.a
