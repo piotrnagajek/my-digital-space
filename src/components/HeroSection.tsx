@@ -1,5 +1,6 @@
 import { ArrowDown } from "lucide-react";
 import { motion } from "framer-motion";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 const HeroSection = () => {
   return (
@@ -10,7 +11,26 @@ const HeroSection = () => {
       <div className="absolute top-1/4 -right-32 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse-glow" />
       <div className="absolute bottom-1/4 -left-32 w-72 h-72 bg-primary/8 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '1.5s' }} />
 
-      <div className="max-w-4xl relative z-10">
+      <div className="max-w-5xl relative z-10 flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-14">
+        {/* Photo */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.85 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7, delay: 0.1, ease: [0.25, 0.1, 0.25, 1] }}
+          className="shrink-0 order-first md:order-last"
+        >
+          <div className="w-32 h-32 sm:w-36 sm:h-36 md:w-44 md:h-44 rounded-2xl overflow-hidden ring-2 ring-primary/30 shadow-[0_0_40px_-10px_hsl(var(--primary)/0.3)]">
+            <img
+              src={profilePhoto}
+              alt="Piotr Nagajek"
+              className="w-full h-full object-cover object-top"
+              style={{ background: 'hsl(var(--background))' }}
+            />
+          </div>
+        </motion.div>
+
+        {/* Text content */}
+        <div>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -36,6 +56,7 @@ const HeroSection = () => {
         >
           ITIL-certified Service Delivery Manager driving excellence in IT service delivery, process optimization, and AI-driven improvements.
         </motion.p>
+        </div>
       </div>
 
       <motion.a
