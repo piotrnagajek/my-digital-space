@@ -4,6 +4,7 @@ import AboutSection from "@/components/AboutSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import PassionsSection from "@/components/PassionsSection";
 import CertificationsSection from "@/components/CertificationsSection";
+import LanguagesSection from "@/components/LanguagesSection";
 import ContactSection from "@/components/ContactSection";
 
 const Index = () => {
@@ -30,8 +31,9 @@ const Index = () => {
       <HeroSection />
       <AboutSection />
       <ProjectsSection />
-      <PassionsSection />
       <CertificationsSection />
+      <LanguagesSection />
+      <PassionsSection />
       <ContactSection />
       <footer className="py-10 md:py-12 px-6 md:px-16 lg:px-24 border-t border-border/30">
         <p className="font-body text-sm text-muted-foreground">© 2026 Piotr Nagajek. All rights reserved.</p>
