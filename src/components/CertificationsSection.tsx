@@ -8,7 +8,7 @@ const certifications = [
     id: "GR750504406PN",
     issued: "December 2018",
     status: "Active",
-    certificateUrl: "/my-digital-space/certificates/GR750504406PN.pdf",
+    certificateUrl: "/certificates/GR750504406PN.pdf",
   },
   {
     title: "ITIL® 4 Foundation Certificate in IT Service Management",
@@ -16,7 +16,7 @@ const certifications = [
     issued: "March 2022",
     renewal: "April 2028",
     status: "Active",
-    certificateUrl: "/my-digital-space/certificates/GR671380889PN.pdf",
+    certificateUrl: "/certificates/GR671380889PN.pdf",
   },
   {
     title: "ITIL® 4 Specialist Create, Deliver and Support Certificate",
@@ -24,7 +24,7 @@ const certifications = [
     issued: "March 2022",
     renewal: "April 2028",
     status: "Active",
-    certificateUrl: "/my-digital-space/certificates/GR672006066PN.pdf",
+    certificateUrl: "/certificates/GR672006066PN.pdf",
   },
 ];
 
