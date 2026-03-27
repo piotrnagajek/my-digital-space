@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className="absolute top-1/4 -right-32 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse-glow" />
       <div className="absolute bottom-1/4 -left-32 w-72 h-72 bg-primary/8 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '1.5s' }} />
 
-      <div className="max-w-5xl relative z-10 flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-14">
+      <div className="max-w-5xl mx-auto relative z-10 flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-14 w-full">
         {/* Photo */}
         <motion.div
           initial={{ opacity: 0, scale: 0.85 }}
