@@ -1,21 +1,7 @@
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Linkedin, Mail } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
 import AnimatedSection from "./AnimatedSection";
 
 const ContactSection = () => {
-  const { toast } = useToast();
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast({ title: "Message sent!", description: "Thanks for reaching out. I'll get back to you soon." });
-    setForm({ name: "", email: "", message: "" });
-  };
-
   return (
     <section id="contact" className="py-20 md:py-28 px-6 md:px-16 lg:px-24 relative">
       <div className="absolute inset-0 bg-radial-glow opacity-30" />
@@ -31,7 +17,7 @@ const ContactSection = () => {
         </AnimatedSection>
 
         <AnimatedSection delay={0.1}>
-          <div className="flex flex-wrap gap-4 mb-12">
+          <div className="flex flex-wrap gap-4">
             <a
               href="https://www.linkedin.com/in/piotr-nagajek-799475bb/"
               target="_blank"
@@ -49,39 +35,6 @@ const ContactSection = () => {
               Piotr.Nagajek@gmail.com
             </a>
           </div>
-        </AnimatedSection>
-
-        <AnimatedSection delay={0.2}>
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid sm:grid-cols-2 gap-6">
-              <Input
-                placeholder="Your name"
-                value={form.name}
-                onChange={(e) => setForm({ ...form, name: e.target.value })}
-                required
-                className="bg-card border-border font-body h-12 focus:border-primary/50 transition-colors"
-              />
-              <Input
-                type="email"
-                placeholder="Your email"
-                value={form.email}
-                onChange={(e) => setForm({ ...form, email: e.target.value })}
-                required
-                className="bg-card border-border font-body h-12 focus:border-primary/50 transition-colors"
-              />
-            </div>
-            <Textarea
-              placeholder="Tell me about your project..."
-              value={form.message}
-              onChange={(e) => setForm({ ...form, message: e.target.value })}
-              required
-              rows={6}
-              className="bg-card border-border font-body resize-none focus:border-primary/50 transition-colors"
-            />
-            <Button type="submit" size="lg" className="font-body tracking-wide font-medium">
-              Send Message
-            </Button>
-          </form>
         </AnimatedSection>
       </div>
     </section>
