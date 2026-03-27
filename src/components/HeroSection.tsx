@@ -64,7 +64,7 @@ const HeroSection = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 0.5 }}
-        className="absolute bottom-12 left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-auto flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors font-body text-sm tracking-[0.2em] uppercase"
+        className="absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors font-body text-sm tracking-[0.2em] uppercase"
       >
         <ArrowDown className="w-4 h-4 animate-bounce" />
         Scroll
