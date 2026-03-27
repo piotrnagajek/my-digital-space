@@ -10,7 +10,7 @@ const languages = [
 const LanguagesSection = () => {
   return (
     <section className="py-16 md:py-20 px-6 md:px-16 lg:px-24">
-      <div className="max-w-5xl">
+      <div className="max-w-5xl mx-auto">
         <AnimatedSection>
           <p className="text-primary font-body text-sm tracking-[0.3em] uppercase mb-4 font-medium">Communication</p>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl mb-10 text-foreground font-bold">Languages</h2>

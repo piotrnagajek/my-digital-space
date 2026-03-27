@@ -29,7 +29,7 @@ const ProjectsSection = () => {
   return (
     <section id="work" className="py-20 md:py-28 px-6 md:px-16 lg:px-24 relative">
       <div className="absolute inset-0 bg-radial-glow opacity-50" />
-      <div className="max-w-5xl relative z-10">
+      <div className="max-w-5xl mx-auto relative z-10">
         <AnimatedSection>
           <p className="text-primary font-body text-sm tracking-[0.3em] uppercase mb-4 font-medium">Experience</p>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl mb-12 md:mb-16 text-foreground font-bold">

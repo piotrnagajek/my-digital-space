@@ -5,7 +5,7 @@ const ContactSection = () => {
   return (
     <section id="contact" className="py-20 md:py-28 px-6 md:px-16 lg:px-24 relative">
       <div className="absolute inset-0 bg-radial-glow opacity-30" />
-      <div className="max-w-2xl relative z-10">
+      <div className="max-w-2xl mx-auto relative z-10">
         <AnimatedSection>
           <p className="text-primary font-body text-sm tracking-[0.3em] uppercase mb-4 font-medium">Contact</p>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl mb-4 text-foreground font-bold">
