@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className="absolute top-1/4 -right-32 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse-glow" />
       <div className="absolute bottom-1/4 -left-32 w-72 h-72 bg-primary/8 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '1.5s' }} />
 
-      <div className="max-w-5xl relative z-10 flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-14">
+      <div className="max-w-5xl mx-auto relative z-10 flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-14 w-full">
         {/* Photo */}
         <motion.div
           initial={{ opacity: 0, scale: 0.85 }}
@@ -64,7 +64,7 @@ const HeroSection = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 0.5 }}
-        className="absolute bottom-12 left-6 md:left-16 lg:left-24 flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors font-body text-sm tracking-[0.2em] uppercase"
+        className="absolute bottom-12 left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-auto flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors font-body text-sm tracking-[0.2em] uppercase"
       >
         <ArrowDown className="w-4 h-4 animate-bounce" />
         Scroll
